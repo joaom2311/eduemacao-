@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edu em Ação – Bem‑Estar Integral e Saúde Mental</title>
+  <!-- Google Font (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset e variáveis */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    :root {
+      --cor-primaria: #005f7f;
+      --cor-secundaria: #e6f7ff;
+      --text-escuro: #333;
+      --text-claro: #555;
+      --branco: #fff;
+      --radius: 6px;
+      --shadow: rgba(0,0,0,0.1) 0px 2px 4px;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-escuro);
+      background-color: var(--branco);
+      line-height: 1.6;
+    }
+    a { text-decoration:none; color: inherit; }
+
+    /* Navbar */
+    header {
+      position: sticky; top:0; width:100%;
+      background: var(--branco);
+      box-shadow: var(--shadow);
+      z-index:1000;
+    }
+    .navbar {
+      max-width:1200px; margin:0 auto;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:1rem;
+    }
+    .navbar h1 { font-size:1.5rem; color: var(--cor-primaria); }
+    .navbar nav a {
+      margin-left:1.25rem; font-weight:600; color: var(--text-escuro);
+      transition: color .2s;
+    }
+    .navbar nav a:hover { color: var(--cor-primaria); }
+
+    /* Hero */
+    .hero {
+      background-color: var(--cor-secundaria);
+      text-align:center; padding:3rem 1rem;
+    }
+    .hero img {
+      max-width: 600px; width:100%; height:auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom:2rem;
+    }
+    .hero h2 {
+      font-size:2rem; color: var(--cor-primaria);
+      margin-bottom:.75rem; font-weight:700;
+    }
+    .hero p {
+      font-size:1.125rem; color: var(--text-claro);
+      margin-bottom:1.5rem;
+    }
+    .hero .btn {
+      display:inline-block;
+      background: var(--cor-primaria);
+      color: var(--branco);
+      padding:.75rem 1.75rem;
+      border-radius: var(--radius);
+      font-weight:600;
+      transition: background .2s;
+    }
+    .hero .btn:hover { background: #00475f; }
+
+    /* Conteúdo principal */
+    main {
+      max-width:1200px; margin:3rem auto; padding:0 1rem;
+    }
+    .section {
+      margin-bottom:3rem;
+    }
+    .section h3 {
+      font-size:1.75rem; color: var(--cor-primaria);
+      margin-bottom:1rem;
+      border-left:4px solid var(--cor-primaria);
+      padding-left:.5rem;
+    }
+    .section p {
+      margin-bottom:1rem;
+      color: var(--text-claro);
+      text-align:justify;
+    }
+
+    /* Lista de serviços */
+    .services {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:1.5rem; margin-top:2rem;
+    }
+    .service {
+      background: var(--branco);
+      padding:1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align:center;
+    }
+    .service h4 {
+      color: var(--cor-primaria);
+      margin-bottom:.75rem;
+      font-size:1.125rem;
+    }
+    .service p {
+      color: var(--text-claro);
+      font-size:.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--branco);
+      padding:2rem 1rem;
+      text-align:center;
+      box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+      color: var(--text-claro);
+      font-size:.9rem;
+    }
+    footer a { color: var(--cor-primaria); font-weight:600; }
+    footer a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <h1>Edu em Ação</h1>
+      <nav>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#proposito">Propósito</a>
+        <a href="#servicos">O que fazemos</a>
+        <a href="#compromisso">Compromisso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <!-- Substitua o src abaixo pelo caminho/URL da imagem anexa -->
+<img src="Edu em Ação 1st Image.png" alt="Edu em Ação – Bem‑Estar Integral e Saúde Mental">
+    <h2>Plataforma de Bem‑Estar Integral e Saúde Mental</h2>
+    <p>Conectamos você a uma rede de profissionais dedicados a promover a saúde mental de forma holística e acessível.</p>
+    <a href="#quem-somos" class="btn">Saiba Mais</a>
+  </section>
+
+  <!-- Conteúdo -->
+  <main>
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="section">
+      <h3>Quem Somos</h3>
+      <p>No <strong>Edu em Ação</strong>, acreditamos que a saúde mental vai muito além das sessões tradicionais de terapia. Somos uma plataforma inovadora de e‑commerce voltada para o bem‑estar integral, que conecta você a uma rede de profissionais dedicados a promover a saúde mental de uma forma holística e acessível.</p>
+      <p>Nossa missão é ajudar as pessoas a entenderem que uma mente saudável não é apenas resultado de consultas com psicólogos ou psiquiatras, mas também de um conjunto de práticas que envolvem corpo, mente e espírito.</p>
+      <p>Sabemos que, para ser verdadeiramente feliz e produtivo, é necessário cuidar de diversas áreas da vida. A saúde mental se reflete diretamente na nossa capacidade de lidar com os desafios do dia a dia, em nossa autoestima, nos relacionamentos e no equilíbrio emocional.</p>
+      <p>Por isso, a Edu em Ação reúne profissionais de várias áreas essenciais para o seu bem-estar, tais como nutricionistas, dermatologistas, personal trainers, instrutores de yoga e mindfulness, dentistas, e muito mais. Nosso objetivo é mostrar que a saúde mental é multifacetada, e que cuidar de cada aspecto de nossa vida pode transformar nossa qualidade de vida como um todo.</p>
+    </section>
+
+    <!-- Nosso Propósito -->
+    <section id="proposito" class="section">
+      <h3>Nosso Propósito</h3>
+      <p>Acreditamos que todos merecem viver de forma plena e equilibrada. Por isso, nosso propósito é democratizar o acesso à saúde mental, oferecendo ferramentas e recursos que ajudem as pessoas a se conhecerem melhor e a se cuidarem de maneira mais ampla e eficaz.</p>
+      <p>Queremos que você entenda que o cuidado com a mente envolve mais do que apenas o emocional: é também sobre o físico, o estilo de vida, a alimentação, o sono e a maneira como nos relacionamos conosco e com o mundo ao nosso redor.</p>
+    </section>
+
+    <!-- O que fazemos -->
+    <section id="servicos" class="section">
+      <h3>O que fazemos</h3>
+      <p>Na <strong>Edu em Ação</strong>, oferecemos uma plataforma prática e intuitiva para você se conectar com profissionais que vão ajudá‑lo a melhorar sua saúde mental de maneira holística e personalizada. Se você busca equilíbrio, maior autoconhecimento ou simplesmente quer adotar hábitos mais saudáveis, nosso e‑commerce é o lugar ideal para começar sua jornada.</p>
+      <div class="services">
+        <div class="service">
+          <h4>Terapias psicológicas e psiquiátricas</h4>
+          <p>Para quem busca apoio emocional e acompanhamento especializado.</p>
+        </div>
+        <div class="service">
+          <h4>Consultoria nutricional</h4>
+          <p>Porque o que você come impacta diretamente no seu bem-estar mental.</p>
+        </div>
+        <div class="service">
+          <h4>Cuidados dermatológicos</h4>
+          <p>Uma pele saudável reflete positivamente na autoestima e no emocional.</p>
+        </div>
+        <div class="service">
+          <h4>Atividades físicas personalizadas</h4>
+          <p>Treinos, yoga e meditação para reduzir o estresse e equilibrar corpo e mente.</p>
+        </div>
+        <div class="service">
+          <h4>Consultoria odontológica</h4>
+          <p>Um sorriso saudável também contribui para uma mente saudável.</p>
+        </div>
+        <div class="service">
+          <h4>Mindfulness e técnicas de relaxamento</h4>
+          <p>Práticas que promovem autoconhecimento e reduzem a ansiedade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compromisso -->
+    <section id="compromisso" class="section">
+      <h3>Nosso Compromisso com o Bem‑Estar</h3>
+      <p>Nosso compromisso é com a promoção de uma vida mais feliz, equilibrada e produtiva. Acreditamos que a saúde mental deve ser tratada de forma preventiva, cuidando das diversas áreas que a compõem antes que se tornem problemas sérios.</p>
+      <p>Ao oferecer acesso a um ecossistema de cuidados integrados, queremos criar uma cultura em que as pessoas entendam que o cuidado com a mente não é um luxo, mas uma necessidade fundamental para uma vida plena.</p>
+      <p>No <strong>Edu em Ação</strong>, estamos aqui para te apoiar, para que você tenha a oportunidade de alcançar seu máximo potencial em todas as áreas da sua vida. Cuide de sua saúde mental e descubra como um equilíbrio completo pode transformar sua jornada.</p>
+      <p>Estamos juntos nessa jornada para uma vida mais leve, mais feliz e mais saudável.</p>
+    </section>
+  </main>
+<!-- Formulário de Cadastro Completo com LGPD -->
+<section id="cadastro" class="section">
+  <h3>Cadastre-se Agora</h3>
+  <p>Inscreva-se gratuitamente para receber conteúdos exclusivos sobre saúde mental, bem-estar integral e novidades sobre nossa plataforma.</p>
+
+  <form action="#" method="post" class="formulario">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+
+    <div class="telefone-container">
+      <select name="codigo-area" required>
+        <option value="+55">+55 (Brasil)</option>
+        <option value="+1">+1 (EUA)</option>
+        <option value="+351">+351 (Portugal)</option>
+        <option value="+34">+34 (Espanha)</option>
+        <!-- Adicione mais códigos conforme necessário -->
+      </select>
+      <input type="tel" name="telefone" placeholder="Número de telefone" required>
+    </div>
+
+    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+
+    <div class="lgpd">
+      <input type="checkbox" id="lgpd" name="lgpd" required>
+      <label for="lgpd">Estou ciente e concordo com a utilização dos meus dados conforme a Lei Geral de Proteção de Dados (LGPD). Leia nossa <a href="#">Política de Privacidade</a>.</label>
+    </div>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</section>
+
+<style>
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin-top: 1.5rem;
+}
+
+.telefone-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.telefone-container select,
+.telefone-container input,
+.formulario input,
+.formulario button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.formulario input:focus,
+.telefone-container select:focus,
+.telefone-container input:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--cor-secundaria);
+}
+
+.lgpd {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-claro);
+}
+
+.lgpd input {
+  margin-top: 0.3rem;
+}
+
+.formulario button {
+  background-color: var(--cor-primaria);
+  color: var(--branco);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+  border: none;
+}
+
+.formulario button:hover {
+  background-color: #00475f;
+}
+</style>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 Edu em Ação. Todos os direitos reservados.</p>
+    <p><a href="#topo">Voltar ao topo</a></p>
+  </footer>
+
+</body>
+</html>
